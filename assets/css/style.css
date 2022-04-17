@@ -146,7 +146,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   color: #a8a9b4;
   padding: 0px 47px;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
   transition: 0.3s;
   font-size: 19px;
 }
@@ -942,6 +942,12 @@ section {
 }
 p23 {
   color :#149ddd;
+}
+p233{
+  color: rgba(5, 13, 24, 0.3);
+}
+.span1{
+  color:#040b14
 }
 #footer .credits {
   padding-top: 5px;
