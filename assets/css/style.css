@@ -760,6 +760,12 @@ section {
   font-size: 14px;
   color: #173b6c;
 }
+/* This is added because when coursor is on <a href  I want the color to be brighter*/
+.contact .info p:hover{
+  color:#149ddd;
+  text-decoration:none;
+}
+/* end of contact .info p:hover */
 .contact .info .email p {
   padding-top: 5px;
 }
@@ -952,6 +958,8 @@ p233{
 p555{
   color: #fff;
 }
+
+
 .span1{
   color:#040b14
 }
