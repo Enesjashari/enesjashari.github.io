@@ -958,8 +958,20 @@ p233{
 p555{
   color: #fff;
 }
+/* Youtube videos style */
+#yt_videos_2{
+  font-size: 40px;
+  position:relative;  
+  margin-left: 500px;
+  font-family: 'Brush Script MT', cursive;
+}
+#yt_videos_1{
+  position:absolute;  
+  font-family: 'Brush Script MT', cursive;
+  font-size: 40px;
 
-
+}
+/* end */
 .span1{
   color:#040b14
 }
