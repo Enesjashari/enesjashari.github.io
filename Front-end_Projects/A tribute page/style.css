@@ -43,10 +43,17 @@ body{
 .image{
     border-radius: 50%;
     transition-duration: 1s;
-    width: 306px;
+    width: 236px;
     height: 281px;
     margin-top: 122px;
     position: fixed;
+    object-fit:cover;
+    margin-left: 50px;
+
+}
+.image:hover{
+    border-radius: 0%;
+
 
 }
 
@@ -60,19 +67,43 @@ body{
 .h1{
     color: white;
     font-size: 15px;
-    margin-left: 90px;
+    margin-left: 110px;
     position: fixed;
-    margin-top: 420px;
-    font-family: Times New Roman", Times, serif;
+    margin-top: 415px;
+    letter-spacing: 1.4px;
+    font-family: Arial narrow;
+}
+.h1-above{    
+    margin-top: 100px;
+    color: wheat;
+    font-size: 37px;
+    margin-left: 437px;
+    position: fixed;
+    letter-spacing: 1.4px;
+    transition-duration: 1s;
 
 }
+.h1-above:hover{    
+    background-color: #12528f;
+    border-radius: 10px;
+}
+
+
 .h2{
-    margin-top: 200px;
+    margin-top: 150px;
     color: white;
     font-size: 15px;
     margin-left: 330px;
     position: fixed;
-    /* font-family: Times New Roman", Times, serif; */
+    line-height: 1.4;
+    letter-spacing: 1.4px;
+    transition-duration: 1s;
+    font-family: Arial narrow;
+}
+.h2:hover{
+background-color: #12528f;
+border-radius: 10px;
+
 }
 
 .anash{
@@ -113,4 +144,31 @@ div.scrollmenu h1 {
 .design{
     margin-left:100px;
     color: #145DA0;
+}
+.button{
+    color:wheat;
+    background-color: red;
+    position: fixed;
+    margin-top: 410px;
+    margin-left: 200px;
+    font-size: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition-duration: 1s;
+}
+
+.button:hover{
+    font-size: 15px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 28px;
+    padding-right: 20px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition-duration: 1s;
+
 }
