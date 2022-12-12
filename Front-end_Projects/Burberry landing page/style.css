@@ -1,0 +1,65 @@
+body{
+    overflow: hidden;
+}
+
+.image { 
+    width: 1368px;
+    height: 757px;
+    position: absolute;
+    margin-left: -9px;
+    margin-top: -8px;
+}
+.container{
+    position: absolute;    
+    margin-left: 800px;
+    margin-top: -15px;
+}
+.unorder{
+    float:right;
+}
+.listitem{
+    display: block;
+    overflow: hidden;
+    list-style-type: none;
+    padding: 0px;
+    float:right;
+    margin: 0;
+    font-weight:bold;
+    text-decoration: underline;
+    padding: 24px;
+}
+.link{
+    padding: 24px;
+    position: absolute;
+}
+.logo{
+    width: 110px;
+    height: 60px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.text{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    font-size: 38px;
+    color: rgb(2, 174, 231);
+}
+.text2{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+}
+.text3{
+    position: absolute;
+    top: 58%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+}
