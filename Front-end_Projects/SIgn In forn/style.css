@@ -1,0 +1,130 @@
+body{
+    background-image: url('background_image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    position: absolute;
+    background-color: transparent;
+    opacity: 0.6;
+    left: 350px;
+    top: 60px;
+    width: 650px;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 12px 6px black;
+    padding: 25px;
+    padding-top: 35px;
+}
+.inside{
+    width: 580px;
+    height: 420px;
+    background-color: rgb(140, 255, 255);
+    position: absolute;
+    opacity: 0.1;
+    padding: 30px;
+    opacity: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px 5px rgb(140, 255, 255);
+    text-align: center;
+}
+.img{
+    position: absolute;
+    width: 120px;
+
+    border-radius: 50%;
+    display: inline-block;
+    right: 40%;
+    top: 5%;
+    border: 2px solid black;
+}
+.society{
+    position: absolute;
+    left: 38%;
+    top: 32%;
+    font-weight: 600;
+    color: black;
+    opacity: 100%;
+    font-style: oblique
+
+}
+.username{
+    position: absolute;
+    left: 33%;
+    top: 50%;
+    color: black;
+    opacity: 100%;
+    font-style: arial;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid gray;
+}
+.username:hover{
+    border: 1px solid black;
+}
+
+.password{
+    position: absolute;
+    left: 33%;
+    top: 60%;
+    color: black;
+    opacity: 100%;
+    font-style: arial;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid gray;
+}
+.password:hover{
+    border: 1px solid black;
+}
+.button{
+    position: absolute;
+    left: 33%;
+    top: 69%;
+    color: black;
+    opacity: 100%;
+    font-style: arial;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: rgba(16, 150, 233, 0.816);
+    border: 1px solid grey;
+    width: 35%;
+}
+.button:hover{
+    box-shadow: 1px 1px 5px 1px blue;
+    background-color:rgba(1, 157, 255, 0.91);
+    border: 1px solid black;
+}
+.signup{
+    position: absolute;
+    font-size: 18px;
+    left: 31%;
+    top: 85%;
+}
+
+.asign{
+    text-decoration: none;
+}
+.asign:hover{
+    text-decoration: underline;
+}
+.asign:visited{
+    text-decoration: none;
+    color: blue;
+}
+.facebook{
+    position: absolute;
+    left: 33%;
+    top: 80%;
+    font-size: 24px;
+}
+.text{
+    position: absolute;
+    left: 38%;
+    top: 78%;
+    font-size: 18px;
+}
