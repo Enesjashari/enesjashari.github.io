@@ -958,6 +958,18 @@ p233{
 p555{
   color: #fff;
 }
+.herocontent{
+  font-style:oblique;
+  font-weight: 590;
+  color: black; 
+  text-decoration: none;
+}
+.herocontent:hover{
+  font-style:oblique;
+  font-weight: 590;
+  color: black; 
+  text-decoration: underline;
+}
 /* Youtube videos style */
 #yt_videos_2{
   font-size: 40px;
