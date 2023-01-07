@@ -1,21 +1,46 @@
-body{
+body {
+    background-image: url('1.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-width: auto;
+    max-height: auto;
     overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+.container{
+    
+    background-color: transparent; 
+    list-style-type: none;
+    text-align: right;
+    margin-top: 13px;
+    padding: 0;
+    max-width: auto;
+    max-height: auto;
+    position: absolute;
+    right: 8px;
+    font-size: 15px;
+    
+}
+.container li {
+    display: inline-block;
+    font-size: 17px;
+    padding: 2px;
+    box-sizing: border-box;
+    max-width: auto;
+    max-height: auto;
+    padding: 3px;
+    top: 5px;
+}
+.container li:hover {
+    text-decoration: underline;
 }
 
-.image { 
-    width: 1368px;
-    height: 757px;
-    position: absolute;
-    margin-left: -9px;
-    margin-top: -8px;
-}
-.container{
-    position: absolute;    
-    margin-left: 800px;
-    margin-top: -15px;
-}
+
 .unorder{
     float:right;
+    max-width: 10%;
 }
 .listitem{
     display: block;
@@ -27,17 +52,21 @@ body{
     font-weight:bold;
     text-decoration: underline;
     padding: 24px;
+    max-width: 10%;
 }
 .link{
     padding: 24px;
     position: absolute;
 }
+.container li:hover{
+    
+    text-shadow: 0px 0px 4px  blue;
+}
 .logo{
-    width: 110px;
-    height: 60px;
+
+    text-align: left;
     position: absolute;
-    margin-top: 20px;
-    margin-left: 30px;
+
 }
 .text{
     position: absolute;
@@ -55,6 +84,12 @@ body{
     font-size: 18px;
     color: black;
 }
+@media screen and (max-width: 600px) {
+    .text2 {
+        top: 55%;
+    }
+
+  }
 .text3{
     position: absolute;
     top: 58%;
@@ -63,3 +98,7 @@ body{
     font-size: 18px;
     color: black;
 }
+
+
+
+  
