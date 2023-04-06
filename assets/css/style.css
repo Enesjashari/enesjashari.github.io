@@ -983,6 +983,31 @@ p555{
   font-size: 40px;
 
 }
+#neshidden1{
+  font-family: 'Brush Script MT', cursive;
+  font-size: 40px;
+  color:#149ddd;
+  text-decoration: underline;
+}
+
+#nesshow1{
+  display: inline;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 40px;
+  text-decoration: underline;
+  color:#149ddd;
+  text-decoration: underline;
+
+}
+#nesshow2{
+  display: inline-block;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 40px;
+  text-decoration: underline;
+  color:#149ddd;
+  text-decoration: underline;
+}
+
 /* end */
 .span1{
   color:#040b14
@@ -993,10 +1018,44 @@ p555{
   font-size: 13px;
   color: #eaebf0;
 }
+
+
 @media (max-width: 1199px) {
   #footer {
     position: static;
     width: auto;
     padding-right: 20px 15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #NesMagazine {
+    display: block;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #NesMagazine2 {
+    display: block;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  #neshidden1 {
+    display:block;
+  }
+}
+@media only screen and (min-width: 700px) {
+  #neshidden1 {
+    display:none;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #nesshow1 {
+    display:none;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #nesshow2 {
+    display:none;
   }
 }
