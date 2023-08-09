@@ -1059,3 +1059,68 @@ p555{
     display:none;
   }
 }
+.downloadcvbutton {
+  border: solid blue;
+  background-color: #149ddd;
+  margin-left: 60px;
+  transition: background-color 0.3s ease;
+}
+.spandownload{
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.spandownload:hover{
+  color: white;
+}
+
+.downloadcvbutton:hover {
+  border: solid rgb(67, 67, 255);
+  background-color: #54a9d1;
+}
+
+.laptop-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+}
+
+.laptop-image {
+  flex: 1;
+  text-align: center;
+}
+
+.laptop-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Animation on hover */
+}
+
+.laptop-image img.animated:hover {
+  transform: scale(1.5); /* Zoom in effect on hover */
+}
+
+.laptop-specs {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.laptop-specs h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.laptop-specs ul {
+  list-style: none;
+  padding: 0;
+}
+
+.laptop-specs ul li {
+  margin-bottom: 10px;
+  color: #555;
+}
