@@ -1060,25 +1060,32 @@ p555{
   }
 }
 .downloadcvbutton {
-  border: solid blue;
+  border: 2px solid #149ddd; /* Slightly thicker border */
   background-color: #149ddd;
-  margin-left: 60px;
-  transition: background-color 0.3s ease;
+  color: white; /* Set text color */
+  padding: 8px 50px; /* Add padding for better spacing */
+  margin-left: 0px;
+  font-size: 15px; /* Adjust font size */
+  font-weight: bold; /* Make text bold */
+  text-transform: uppercase; /* Uppercase text */
+  border-radius: 4px; /* Add border radius for rounded corners */
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
-.spandownload{
+
+.downloadcvbutton:hover {
+  background-color: #54a9d1;
+  border-color: rgb(67, 67, 255);
+}
+
+/* Keep the existing styling for the span */
+.spandownload {
   color: black;
   transition: color 0.3s ease;
 }
 
-.spandownload:hover{
+.spandownload:hover {
   color: white;
 }
-
-.downloadcvbutton:hover {
-  border: solid rgb(67, 67, 255);
-  background-color: #54a9d1;
-}
-
 .laptop-section {
   display: flex;
   justify-content: space-around;
