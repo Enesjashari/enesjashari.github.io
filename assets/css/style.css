@@ -11,6 +11,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
+  overflow-x: hidden;
 }
 
 a {
@@ -197,21 +198,22 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  background: url("../img/enesjashariphoto_desktop.jpg") top center;
-  width: 100%;
-  height: 100vh;
+  /* background: url("../img/enesjashariphoto_desktop.jpg") top center; */
+  background: url("../img/enes_landscape.jpg") top center;
+  width: 98%;
+  height: 120vh;
   background-size: cover;
-  right: 500px;
+  margin-left: 100px;
   background-repeat: no-repeat;
-
-  
-
 }
 #hero:before {
   content: "";
   background: rgba(5, 13, 24, 0.3);
   position: absolute;
   bottom: 0;
+  margin-left: 00px;
+  height: 120vh;
+
   top: 0;
   left: 0;
   right: 0;
@@ -224,7 +226,7 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 #hero h1 {
-  margin: 0 0 10px 0;
+  margin: 200px 50px 10px 0;
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
@@ -244,22 +246,42 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 1024px) {
   #hero {
-    background: url("../img/enesjashariphoto_desktop.jpg") top center;
-    background-attachment: fixed;
-    background-position: center; /* Adjust the position as needed */
+    background: url("../img/enes_portrait.jpg") top center;
     background-size: cover; /* or contain, depending on your preference */
     background-repeat: no-repeat;
+    margin: 0; /* Reset any margin */
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height if you want it full screen */
+  }
+  #hero:before {
+    content: "";
+    background: rgba(5, 13, 24, 0.3);
+    position: absolute;
+    bottom: 0;
+    height: 100vh;
+  
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
   }
 }
+
 @media (max-width: 768px) {
   #hero h1 {
+    margin-top: 420px;
     font-size: 28px;
     line-height: 36px;
+    text-align: center;
   }
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
+  }
+  #hero p {
+    margin-top: 0; /* Ensure there's no extra margin pushing it down */
+    text-align: center;
   }
 }
 
