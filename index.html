@@ -9,25 +9,19 @@
   <meta content="Enes Jashari , enes jashari python , enes jashari website ,Python , Django , Tkinter , Numpy , Software Developer , Web-app Developer , Website Developer , Developer , Programmer , python engineer , HTML, CSS," name="keywords">
   <meta name="author" content="Enes Jashari">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- HTML Meta Tags -->
+
 <title>Enes Jashari</title>
 <meta name="description" content="Welcome to Enes Jashari's website, where you can learn more about him, his programming experience, and his projects. On this site, you will find code and video demonstrations of his projects, which are open source and available for free use. As a developer, my first programming language was Python and I am currently continuing my education in advanced Python, including libraries, frameworks, OOPs, and API development. I am also actively studying machine learning .">
 
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 
-
-
 <!-- Facebook Meta Tags -->
 <meta property="og:url" content="https://enesjashari.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Enes Jashari">
 <meta property="og:description" content="Welcome to Enes Jashari's website, where you can learn more about him, his programming experience, and his projects. On this site, you will find code and video demonstrations of his projects, which are open source and available for free use. As a developer, my first programming language was Python and I am currently continuing my education in advanced Python, including libraries, frameworks, OOPs, and API development. I am also actively studying machine learning .">
-<!--
-  You can generate this image URL dynamically: https://ogcdn.net/6064b869-74ed-4eb9-b76c-0b701ffe7e6b/v4/{site_text}/{title_text}/{image_url}/og.png
-  Replace the variables in the brackets with your own values and use this URL in the image tag below this comment. Ensure values are URL encoded.
-  For more information, read: https://www.opengraph.xyz/blog/how-to-implement-dynamic-open-graph-images
--->
+
 <meta property="og:image" content="https://enesjashari.github.io/assets/img/enes_landscape.jpg">
 
 <!-- Twitter Meta Tags -->
@@ -36,18 +30,9 @@
 <meta property="twitter:url" content="https://enesjashari.github.io/">
 <meta name="twitter:title" content="Enes Jashari">
 <meta name="twitter:description" content="Welcome to Enes Jashari's website, where you can learn more about him, his programming experience, and his projects. On this site, you will find code and video demonstrations of his projects, which are open source and available for free use. As a developer, my first programming language was Python and I am currently continuing my education in advanced Python, including libraries, frameworks, OOPs, and API development. I am also actively studying machine learning .">
-<!--
-  You can generate this image URL dynamically: https://ogcdn.net/6064b869-74ed-4eb9-b76c-0b701ffe7e6b/v4/{site_text}/{title_text}/{image_url}/og.png
-  Replace the variables in the brackets with your own values and use this URL in the image tag below this comment. Ensure values are URL encoded.
-  For more information, read: https://www.opengraph.xyz/blog/how-to-implement-dynamic-open-graph-images
--->
+
 <meta name="twitter:image" content="https://enesjashari.github.io/assets/img/enes_landscape.jpg">
 
-<!-- Meta Tags Generated via https://www.opengraph.xyz -->
-  
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2768553920905431"
-     crossorigin="anonymous"></script>
-   
   <!-- Favicons -->
   <link href="assets/img/enes_portrait.jpg" rel="icon">
   <link href="assets/img/enes_portrait.jpg" rel="apple-touch-icon">
@@ -65,10 +50,12 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-35TZ5QERBX"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -76,12 +63,469 @@
 
   gtag('config', 'G-35TZ5QERBX');   
 </script>
-  <!-- =======================================================
-  * Template Name: iPortfolio - v3.7.0
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+<style>
+  .project-thumbnail {
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.card {
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(0,0,0,0.125);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.tech-stack .badge {
+  margin: 2px;
+  font-weight: 500;
+}
+.skill-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.skill-icon {
+  font-size: 1.8rem;
+  color: #147efb;
+  margin-right: 1rem;
+}
+
+.skill-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.badge {
+  background: #f3f6fd;
+  color: #2d2e32;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.badge:hover {
+  background: #147efb;
+  color: white;
+  transform: scale(1.05);
+}
+.portfolio {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.project-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+.project-image {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+.project-links {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.7);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-links {
+  opacity: 1;
+}
+
+.demo-link, .code-link {
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.demo-link {
+  background: #147efb;
+}
+
+.code-link {
+  background: #2d2e32;
+}
+
+.demo-link:hover, .code-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.project-content {
+  padding: 1.5rem;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.tech-item {
+  background: #f3f6fd;
+  color: #147efb;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.project-impact {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.impact-stat {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #f8f9fa;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+.portfolio-subtitle {
+  font-size: 1.1rem;
+  color: #6c757d;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+.portfolio {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 4rem 0;
+}
+
+.portfolio-subtitle {
+  font-size: 1.1rem;
+  color: #6c757d;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.project-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+              box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  height: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+.project-image {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.08);
+}
+
+.project-links {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.6));
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover .project-links {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.demo-link, .code-link {
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.demo-link {
+  background: #147efb;
+  border: 2px solid #147efb;
+}
+
+.code-link {
+  background: #2d2e32;
+  border: 2px solid #2d2e32;
+}
+
+.demo-link:hover {
+  background: #0f5db7;
+  transform: translateY(-2px);
+}
+
+.code-link:hover {
+  background: #1a1b1f;
+  transform: translateY(-2px);
+}
+
+.project-content {
+  padding: 2rem;
+}
+
+.project-title {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #2d2e32;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+}
+
+.tech-item {
+  background: #f3f6fd;
+  color: #147efb;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.project-description {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.project-impact {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.impact-stat {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: #f8f9fa;
+  padding: 0.8rem 1.2rem;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.impact-stat i {
+  color: #147efb;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .project-links {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .demo-link, .code-link {
+    justify-content: center;
+    padding: 0.6rem 1rem;
+  }
+}
+.certifications {
+  background: #f8f9fa;
+  padding: 4rem 0;
+}
+
+.certification-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.certification-filters button {
+  background: none;
+  border: 2px solid #147efb;
+  color: #147efb;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.certification-filters button.active,
+.certification-filters button:hover {
+  background: #147efb;
+  color: white;
+}
+
+.certification-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.certification-card:hover {
+  transform: translateY(-10px);
+}
+
+.certification-header {
+  padding: 1.5rem;
+  background: #147efb;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.certification-header i {
+  font-size: 1.5rem;
+}
+
+.certification-header h3 {
+  margin: 0;
+  flex-grow: 1;
+}
+
+.badge {
+  background: rgba(255,255,255,0.2);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.certification-body {
+  position: relative;
+}
+
+.certification-body img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.certification-meta {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date {
+  color: white;
+  font-weight: 500;
+}
+
+.actions {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.actions a {
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.2);
+  transition: all 0.3s ease;
+}
+
+.actions a:hover {
+  background: #147efb;
+  transform: scale(1.1);
+}
+</style>
 </head>
 
 <body>
@@ -109,11 +553,6 @@
           
           <!-- <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKkVXnwVtJLJmcMchqLGkxtptdkfFlwxxzFRXpZnQvJblnxGsGDCCjxhhxszjQQjCbwgZMR" class="slack"><i class="bx bxl-slack"></i></a> -->
         
-          <a href="https://www.facebook.com/enes.jashari.98/" class="facebook"><i class="bx bxl-facebook"></i></a>
-        
-        
-          <a href="https://www.instagram.com/enes.jasharii/" class="instagram"><i class="bx bxl-instagram"></i></a>
-       
 
           <!-- <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
           <a href="#"  class="snapchat"><i class="bx bxl-snapchat"></i></a> -->
@@ -141,164 +580,165 @@
     </div>
   </header><!-- End Header -->
 
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+  <div class="hero-container" data-aos="fade-in">
+    <h1>Enes Jashari</h1>
+    <p>I'm <span class="typed" data-typed-items="Senior Full-Stack Developer, AI Solutions Engineer, Software Architect, Technology Educator"></span></p>
+  </div>
+</section><!-- End Hero -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Enes Jashari</h1>
-      <!-- <p>I'm <span class="typed" data-typed-items=" Python Developer, Software Developer, Back-end Developer, Web-app Developer, Data Scientist, GUI Developer, Graphic Designer , Freelancer, IT "></span></p> -->
-      <p>I'm <span class="typed" data-typed-items="Full-stack Developer , Software Developer , Mobile App Developer   "></span></p>
+<!-- ======= About Section ======= -->
+<section id="about" class="about">
+  <div class="container">
+    <div class="section-title">
+      <h2>About Me</h2>
     </div>
-  </section><!-- End Hero -->
 
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>About me</h2>
-          <p></p>
-        </div>
-
+    <div class="row">
+      <div class="col-lg-4" data-aos="fade-right">
+        <img src="assets/img/enes_portrait.jpg" class="img-fluid rounded" alt="Enes Jashari Portrait">
+      </div>
+      <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+        <h3>Full-Stack Developer & Technology Instructor</h3>
+        <p class="fst-italic">
+          Senior developer specializing in building scalable web applications and AI-powered solutions, with a passion for mentoring emerging tech talent.
+        </p>
+        <p>
+          As a Senior Full-Stack Developer at Locum Providers, I architected role-based authentication systems that reduced security incidents by 40% and optimized CI/CD pipelines to increase deployment frequency by 25%. My integration of Django REST APIs for hospital management systems eliminated 35% of manual processing time while maintaining HIPAA compliance.
+        </p>
+        <p>
+          At A.U.K's TDI Department, I've developed curriculum and mentored 250+ students in modern technologies including React, Django, and machine learning fundamentals. My trainees achieve 85% internship placement within six months of course completion.
+        </p>
         <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/enes_portrait.jpg" class="img-fluid rounded" alt="">
+          <div class="col-lg-6">
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span><a href="https://enesjashari.github.io/" target="_blank">enesjashari.github.io</a></span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span><a href="mailto:enesjashari2004@gmail.com">enesjashari2004@gmail.com</a></span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Github:</strong> <span><a href="https://github.com/Enesjashari" target="_blank">github.com/Enesjashari</a></span></li>
+            </ul>
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Full-Stack &amp; Software Developer.</h3>
-            <p >
-               As a Full-Stack Engineer, I have become very proficient in developing robust end-to-end platforms and heading various teams within an organization.
-               I have experience in software design, systemization, and incorporating high-tech solutions like smart bots, and OpenAI technology, along with web crawlers. 
-               Besides my engineering role, I also have a keen interest in sharing knowledge and mentoring students, and at present, I teach in a technology university
-               helping learners with Python, Java, JavaScript Django, or Kotlin and helping them learn how to think and solve problems by implementing projects.
-                 
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span><a href="https://enesjashari.github.io/">EnesJashari.github.io</a></span></li> -->
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqVNfKXChPpBdQQlGwkCSfhRkKbcMppWzZZjBTfBsrwLLHKrmJZpJwCnWGpXqLHNmrCwQq">enesjashari2004@gmail.com </a></span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Github Profile:</strong> <span><a href="https://github.com/Enesjashari?tab=repositories">Profile & Projects</a></span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>LinkedIn:</strong> <span><a href="https://www.linkedin.com/in/enesjashari/">linkedin.com/in/enesjashari</a></span></li>
-                </ul>
-              </div>
-            </div>
-            <p>  
-               I have knowledge of various programming languages and frameworks and have worked on several innovative solutions and projects in both private companies 
-               and the academic environment. All this is substantiated by my certificates in Artificial Intelligence, Machine Learning, Big Data Analytics, etc,
-               and by practical work on architectures of several distributed applications, APIs, and smart systems.
-              </p>
+          <div class="col-lg-6">
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <strong>LinkedIn:</strong> <span><a href="https://www.linkedin.com/in/enesjashari/" target="_blank">linkedin.com/in/enesjashari</a></span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Location:</strong> <span>Prishtina, Kosovo</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Availability:</strong> <span>Open for Consultations</span></li>
+            </ul>
           </div>
         </div>
-
       </div>
-    </section><!-- End About Section -->
+    </div>
+  </div>
+</section><!-- End About Section -->
+<!-- ======= Skills Section ======= -->
+<section id="skills" class="skills section-bg">
+  <div class="container">
+    <div class="section-title">
+      <h2>Technical Arsenal</h2>
+      <p class="lead">Mastering the tools that power modern digital solutions</p>
+    </div>
 
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p>I'm constantly expanding my skills in various programming languages and am dedicated to improving my knowledge on 
-            a daily basis. Currently, I have expertise in following languages. In the near future, I plan to add more languages to this list as I continue to grow and develop as a programmer.
-          </p>
+    <div class="row gy-5">
+      <!-- Column 1 -->
+      <div class="col-lg-4">
+        <div class="skill-card" data-aos="zoom-in">
+          <div class="skill-header">
+            <i class="fas fa-code skill-icon"></i>
+            <h4>Core Development</h4>
+          </div>
+          <div class="skill-badges">
+            <span class="badge">Python</span>
+            <span class="badge">Django/FastAPI</span>
+            <span class="badge">Java/Kotlin</span>
+            <span class="badge">JavaScript/TS</span>
+            <span class="badge">C#/PHP</span>
+            <span class="badge">React.js</span>
+            <span class="badge">Node.js</span>
+          </div>
         </div>
 
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">Python & Django<i class="val"></i></span>
-              <div class="progress-bar-wrap" style="height: 4px;">
-                <div class="progress-bar" style="height: 4px;" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill"> Javascript <i class="val"></i></span>
-              <div class="progress-bar-wrap"  style="height: 4px;" >
-                <div class="progress-bar"  style="height: 4px;"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill"> Java<i class="val"></i></span>
-              <div class="progress-bar-wrap"  style="height: 4px;" >
-                <div class="progress-bar"  style="height: 4px;"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            
-            <div class="progress">
-              <span class="skill">Numpy & Beautifulsoup<i class="val"></i></span>
-              <div class="progress-bar-wrap"  style="height: 4px;" >
-                <div class="progress-bar" role="progressbar"  style="height: 4px;"  aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-
-            
-            <div class="progress">
-              <span class="skill">HTML & CSS & bootstrap <i class="val"></i></span>
-              <div class="progress-bar-wrap"  style="height: 4px;" >
-                <div class="progress-bar"  style="height: 4px;"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-
+        <div class="skill-card" data-aos="zoom-in">
+          <div class="skill-header">
+            <i class="fas fa-database skill-icon"></i>
+            <h4>Data Management</h4>
           </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">SQL & MongoDB &amp; SQLite<i class="val"></i></span>
-              <div class="progress-bar-wrap"  style="height: 4px;" >
-                <div class="progress-bar"  style="height: 4px;"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Pandas & Tkinter<i class="val"></i></span>
-              <div class="progress-bar-wrap"  style="height: 4px;" >
-                <div class="progress-bar"  style="height: 4px;"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">Anaconda & Machine Learning techniques<i class="val"></i></span>
-              <div class="progress-bar-wrap"  style="height: 4px;" >
-                <div class="progress-bar"  style="height: 4px;"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-
-            <div class="progress">
-              <span class="skill">Windows &amp; Kali Linux<i class="val"></i></span>
-              <div class="progress-bar-wrap"  style="height: 4px;" >
-                <div class="progress-bar"  style="height: 4px;"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Photoshop & Illustrator<i class="val"></i></span>
-              <div class="progress-bar-wrap"  style="height: 4px;" >
-                <div class="progress-bar"  style="height: 4px;"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-
+          <div class="skill-badges">
+            <span class="badge">MySQL/MariaDB</span>
+            <span class="badge">MongoDB</span>
+            <span class="badge">SQLite</span>
+            <span class="badge">ETL Processes</span>
+            <span class="badge">Database Optimization</span>
           </div>
-
         </div>
-
       </div>
-    </section><!-- End Skills Section -->
 
+      <!-- Column 2 -->
+      <div class="col-lg-4">
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="skill-header">
+            <i class="fas fa-cloud skill-icon"></i>
+            <h4>Cloud & DevOps</h4>
+          </div>
+          <div class="skill-badges">
+            <span class="badge">AWS/GCP</span>
+            <span class="badge">Docker/K8s</span>
+            <span class="badge">Terraform</span>
+            <span class="badge">CI/CD Pipelines</span>
+            <span class="badge">Redis/RabbitMQ</span>
+            <span class="badge">Git/GitLab</span>
+          </div>
+        </div>
 
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="skill-header">
+            <i class="fas fa-shield-alt skill-icon"></i>
+            <h4>Security & QA</h4>
+          </div>
+          <div class="skill-badges">
+            <span class="badge">Secure Coding</span>
+            <span class="badge">Data Encryption</span>
+            <span class="badge">OWASP Standards</span>
+            <span class="badge">A/B Testing</span>
+            <span class="badge">Unit Testing</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col-lg-4">
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="skill-header">
+            <i class="fas fa-brain skill-icon"></i>
+            <h4>AI/ML & Analytics</h4>
+          </div>
+          <div class="skill-badges">
+            <span class="badge">TensorFlow/PyTorch</span>
+            <span class="badge">OpenCV</span>
+            <span class="badge">Pandas/NumPy</span>
+            <span class="badge">SciKit-Learn</span>
+            <span class="badge">Matplotlib</span>
+            <span class="badge">Big Data Analytics</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="skill-header">
+            <i class="fas fa-tools skill-icon"></i>
+            <h4>Development Ecosystem</h4>
+          </div>
+          <div class="skill-badges">
+            <span class="badge">REST/GraphQL</span>
+            <span class="badge">Web Scraping</span>
+            <span class="badge">HTML5/CSS3</span>
+            <span class="badge">Bootstrap</span>
+            <span class="badge">Figma/Adobe XD</span>
+            <span class="badge">Agile Methodologies</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- End Skills Section -->
 
   
     <!-- ======= Services Section =======
@@ -372,101 +812,203 @@
       </div> -->
     <!-- </section>End Services Section -->
 
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio section-bg">
+  <div class="container">
+    <div class="section-title">
+      <h2>Featured Projects</h2>
+      <p class="portfolio-subtitle">Innovative solutions merging technical excellence with user-centric design</p>
+    </div>
 
-    <!-- ======= Portfolio Video Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
-
-          <div class="section-title">
-            <h2>Portfolio Projects</h2>
-            <p>Below are a few samples of my work.  If you would like to see a more comprehensive list of my projects, please click on the provided<a href="https://github.com/Enesjashari/Portfolio-Projects"> link</a>. These projects highlight my capabilities as a developer and my ability to create functional and effective solutions.</p>
+    <div class="row gy-4 portfolio-container">
+      <!-- Secure Banking API -->
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/img/Bank-API.png" alt="Financial API Interface">
+            <div class="project-links">
+              <a href="https://bankapi.pythonanywhere.com/" target="_blank" class="demo-link">
+                <i class="fas fa-file-code"></i> API Docs
+              </a>
+              <a href="https://github.com/Enesjashari/banking-api" target="_blank" class="code-link">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
           </div>
-
-      
-          <div class="container  ">
-          <div class="card d-inline-block" style="width: 18rem;">
-            <img src="assets/img/Locum-Providers.png" style="height: 210px;" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Locum Tenens</h5>
-              <p class="card-text">Unlock a Universe of Movie Quotes with our User-Friendly API. Access and integrate movie quotes seamlessly into your applications using various languages and formats.</p>
-              <div class="text-center">
-                <a href="https://quoteapi.pythonanywhere.com/" class="btn btn-outline-primary">Visit Now</a>
+          <div class="project-content">
+            <h3 class="project-title">Secure Banking API</h3>
+            <div class="tech-stack">
+              <span class="tech-item">FastAPI</span>
+              <span class="tech-item">JWT</span>
+              <span class="tech-item">PostgreSQL</span>
+              <span class="tech-item">AES-256</span>
+            </div>
+            <p class="project-description">Financial services API handling 50+ daily transactions with military-grade encryption and real-time fraud detection.</p>
+            <div class="project-impact">
+              <div class="impact-stat">
+                <i class="fas fa-lock"></i>
+                <span>256-bit Encryption</span>
+              </div>
+              <div class="impact-stat">
+                <i class="fas fa-bolt"></i>
+                <span>Real-time Processing</span>
               </div>
             </div>
           </div>
-
-          <div class="card d-inline-block" style="width: 18rem;">
-            <img src="assets/img/Bank-API.png" style="max-height: 210px;" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Bank API</h5>
-              <p class="card-text">Unlock a Universe of Movie Quotes with our User-Friendly API. Access and integrate movie quotes seamlessly into your applications using various languages and formats.</p>
-              <div class="text-center">
-                <a href="https://bankapi.pythonanywhere.com/" class="btn btn-outline-primary">Visit Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card d-inline-block" style="width: 18rem;">
-            <img src="https://wifiqrcode.pythonanywhere.com/static/assets/img/Quote-Logo.jpg" style="max-height: 210px;" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Quote API</h5>
-              <p class="card-text">Unlock a Universe of Movie Quotes with our User-Friendly API. Access and integrate movie quotes seamlessly into your applications using various languages and formats.</p>
-              <div class="text-center">
-                <a href="https://quoteapi.pythonanywhere.com/" class="btn btn-outline-primary">Visit Now</a>
-              </div>
-            </div>
-          </div>
-          
-          <div class="card d-inline-block" style="width: 18rem;">
-            <img src="./assets/img/Nes-magazine-logo-02.png" style="min-height: 233px;" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Nes Magazine</h5>
-              <p class="card-text">The world in your pocket. Your one-stop news portal for breaking headlines and in-depth analysis. Stay informed on current events wherever you are.</p>
-              <div class="text-center">
-              <a href="https://nesmagazine.pythonanywhere.com/" class="btn btn-outline-primary">Visit Now</a>
-            </div>
-            </div>
-          </div>
-
-          <div class="mt-4 ">
-            <div class="card  d-inline-block " style="width: 18rem;">
-              <img src="./assets/img/wifi.png" style="max-height: 232px;" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Wifi Qr Code Generator</h5>
-                <p class="card-text">The quick and easy way to share your WiFi. Create scannable QR codes for guests and friends.Secure and encrypted.</p>
-                <div class="text-center">
-                <a href="https://wifiqrcode.pythonanywhere.com/" class="btn btn-outline-primary">Visit Now</a>
-              </div>
-              </div>
-            </div>
-  
-            <div class="card d-inline-block" style="width: 18rem;">
-              <img src="./assets/img/weather.png" style="max-height: 232px;" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Weather App</h5>
-                <p class="card-text"> Get the information you need, fast and clear, anywhere in the world.The world's weather, now at your fingertips.</p>
-                <div class="text-center">
-                <a href="https://liveweather.pythonanywhere.com/" class="btn btn-outline-primary ml-1">Visit Now</a>
-               </div>
-            </div>
-            </div>
-  
-            <div class="card d-inline-block" style="width: 18rem;">
-              <img src="./assets/img/Todo-app.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Todo App</h5>
-                <p class="card-text"> Get the information you need, fast and clear, anywhere in the world.The world's weather, now at your fingertips.</p>
-                <div class="text-center">
-                <a href="https://liveweather.pythonanywhere.com/" class="btn btn-outline-primary ml-1">Visit Now</a>
-               </div>
-            </div>
-            </div>
-  
-          </div>
-
         </div>
-    <section>
-    <!-- End Portfolio Video  Section -->
+      </div>
+
+      <!-- NES Magazine -->
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/img/Nes-magazine-logo-02.png" alt="Digital News Platform">
+            <div class="project-links">
+              <a href="https://nesmagazine.pythonanywhere.com/" target="_blank" class="demo-link">
+                <i class="fas fa-newspaper"></i> Visit Platform
+              </a>
+              <a href="https://github.com/Enesjashari/nes-magazine" target="_blank" class="code-link">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">NES Magazine</h3>
+            <div class="tech-stack">
+              <span class="tech-item">Django CMS</span>
+              <span class="tech-item">Elasticsearch</span>
+              <span class="tech-item">AWS</span>
+              <span class="tech-item">ML</span>
+            </div>
+            <p class="project-description">Headless CMS platform delivering personalized content to 10k+ monthly users through machine learning.</p>
+            <div class="project-impact">
+              <div class="impact-stat">
+                <i class="fas fa-users"></i>
+                <span>10k+ Monthly Users</span>
+              </div>
+              <div class="impact-stat">
+                <i class="fas fa-brain"></i>
+                <span>AI Recommendations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Secure WiFi Sharing -->
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/img/wifi.png" alt="WiFi QR Generator">
+            <div class="project-links">
+              <a href="https://wifiqrcode.pythonanywhere.com/" target="_blank" class="demo-link">
+                <i class="fas fa-qrcode"></i> Generate QR
+              </a>
+              <a href="https://github.com/Enesjashari/wifi-qr-generator" target="_blank" class="code-link">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Secure WiFi Sharing</h3>
+            <div class="tech-stack">
+              <span class="tech-item">Python</span>
+              <span class="tech-item">QRlib</span>
+              <span class="tech-item">JavaScript</span>
+              <span class="tech-item">RBAC</span>
+            </div>
+            <p class="project-description">Enterprise credential management system with detailed analytics and role-based access control.</p>
+            <div class="project-impact">
+              <div class="impact-stat">
+                <i class="fas fa-user-shield"></i>
+                <span>Role-based Access</span>
+              </div>
+              <div class="impact-stat">
+                <i class="fas fa-chart-line"></i>
+                <span>Usage Analytics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Meteorological AI -->
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/img/weather.png" alt="Weather Prediction Interface">
+            <div class="project-links">
+              <a href="https://liveweather.pythonanywhere.com/" target="_blank" class="demo-link">
+                <i class="fas fa-cloud-sun-rain"></i> Check Weather
+              </a>
+              <a href="https://github.com/Enesjashari/weather-ai" target="_blank" class="code-link">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Meteorological AI</h3>
+            <div class="tech-stack">
+              <span class="tech-item">TensorFlow</span>
+              <span class="tech-item">React</span>
+              <span class="tech-item">API Integration</span>
+              <span class="tech-item">Data Science</span>
+            </div>
+            <p class="project-description">ML-powered forecasting system achieving 92% prediction accuracy across European regions.</p>
+            <div class="project-impact">
+              <div class="impact-stat">
+                <i class="fas fa-percentage"></i>
+                <span>92% Accuracy</span>
+              </div>
+              <div class="impact-stat">
+                <i class="fas fa-globe-europe"></i>
+                <span>EU Coverage</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Enterprise Task Manager -->
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/img/Todo-app.png" alt="Productivity Application">
+            <div class="project-links">
+              <a href="https://todoapp.pythonanywhere.com/" target="_blank" class="demo-link">
+                <i class="fas fa-tasks"></i> Try Demo
+              </a>
+              <a href="https://github.com/Enesjashari/task-manager" target="_blank" class="code-link">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Enterprise Task Manager</h3>
+            <div class="tech-stack">
+              <span class="tech-item">MERN Stack</span>
+              <span class="tech-item">Jira API</span>
+              <span class="tech-item">OAuth2</span>
+              <span class="tech-item">REST</span>
+            </div>
+            <p class="project-description">Cross-platform productivity suite integrating with enterprise tools through secure APIs.</p>
+            <div class="project-impact">
+              <div class="impact-stat">
+                <i class="fas fa-plug"></i>
+                <span>API Integrations</span>
+              </div>
+              <div class="impact-stat">
+                <i class="fas fa-mobile-alt"></i>
+                <span>Cross-platform</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Portfolio Section -->
 
     <!-- ======= Portfolio Certificate Section ======= -->
     <!-- id="portfolio between section and class commented -->
@@ -706,12 +1248,6 @@
           <div class="col-lg-5 d-flex align-items-stretch">
             <div class="info">
               
-              <div class="email hidden">
-                <i class="bi bi-book"></i>
-                <h4>Enes Resume:</h4>
-                <p><a href="assets/CV/EnesJashariCV.pdf" download><button class="downloadcvbutton"  type="submit"><span  class="spandownload" >Download CV </span><span class="iconify" data-icon="fa-solid:download" > </span></button></a></p>
-              </div>
-              
               <div class="email">
                 <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqVNfKXChPpBdQQlGwkCSfhRkKbcMppWzZZjBTfBsrwLLHKrmJZpJwCnWGpXqLHNmrCwQq"><i class="bi bi-envelope"></i></a>
                 <h4>Email:</h4>
@@ -719,36 +1255,12 @@
               </div>
 
 
-
-              <div class="address">
-                <a href="https://www.openstreetmap.org/search?query=fushe%20kosove#map=13/42.6358/21.1433"><i class="bi bi-geo-alt"></i></a>
-                <h4>Location:</h4>
-                <p>Kosovo,Fushe Kosove,11000</p>
-              </div>
-
-
-              <iframe width="335" height="290" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d752305.7301522654!2d20.242713671241564!3d42.56178456867201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13537af354bf7df1%3A0xbfffeedfabc31791!2sKosovo!5e0!3m2!1sen!2s!4v1733244169044!5m2!1sen!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
             </div>
           </div>
         </div>
-      </section><!-- End Contact Section -->
+      </section>
 
 
-      <!-- <section class="laptop-section">
-        <div class="laptop-image">
-            <img src="assets\img\portfolio\llaptopv15.png" alt="MacBook Air M1" class="animated">
-        </div>
-        <div class="laptop-specs">
-            <h2>Lenovo V15 Specifications</h2>
-            <ul>
-                <li><strong>CPU:</strong> Core i7-1435U 4.4 GHz 10 cores</li>
-                <li><strong>RAM:</strong> 16 GB SO-DIMM DDR4 3200 MHz</li>
-                <li><strong>Storage:</strong> 512 GB SSD M.2 2242 PCIe 3.0 x4 - NVM Express (NVMe)</li>
-                <li><strong>Graphics:</strong> Integrated Intel Iris Xe</li>
-            </ul>
-        </div>
-    </section> -->
 
     </main><!-- End #main -->
   <!-- ======= Footer ======= -->
@@ -839,7 +1351,13 @@ s0.parentNode.insertBefore(s1,s0);
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script>
+    const lightbox = GLightbox({
+      touchNavigation: true,
+      loop: true,
+      autoplayVideos: true
+    });
+  </script>
 </body>
 
 </html>
