@@ -175,6 +175,27 @@
   border-radius: 24px; /* Rounded corners, remove for sharp edges */
 }
 
+.certification-item {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.view-link {
+  font-size: 0.9rem;
+  color: var(--primary);
+  text-decoration: underline;
+  margin-left: 1rem;
+  transition: color 0.2s;
+}
+
+.view-link:hover {
+  color: var(--accent);
+}
+
+
 .hero-profile::after {
   content: '';
   position: absolute;
@@ -553,6 +574,9 @@
       box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
     }
 
+    #experience{
+      margin-top: -100px;
+    }
     .education-title {
       font-size: 1.4rem;
       margin-bottom: 15px;
@@ -1036,24 +1060,24 @@
               <img src="https://github.com/Enesjashari/enesjashari.github.io/blob/main/assets/img/enes_portrait_left.jpg?raw=true" alt="Enes Jashari Profile Picture">
               
             </div>
-          <div class="skills-grid">
+          <!-- <div class="skills-grid">
             <div class="skill-card">
               <h4>AI/ML</h4>
-              <span>TensorFlow, NLP</span>
+              <span>TensorFlow, NLP, LLM , Unsupervised Learning , Regression</span>
             </div>
             <div class="skill-card">
-              <h4>Backend</h4>
-              <span>Django, Node.js</span>
+              <h4>Tech Stack</h4>
+              <span>Python, Django , React , Node.js , Java , JS , C# , PHP , HTML/CSS</span>
             </div>
             <div class="skill-card">
               <h4>Cloud</h4>
-              <span>AWS, GCP</span>
+              <span>GCP , AWS , Github , Git , CI/CD , Ubuntu </span>
             </div>
             <div class="skill-card">
               <h4>Security</h4>
-              <span>AES-256, JWT</span>
+              <span>AES-256, JWT , Nmap , Kali Linux, ClamAV</span>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -1131,14 +1155,30 @@
           
           <div class="certifications">
             <h4>Certifications:</h4>
-            <div class="certification-item">PCAP Certificate – Python Institute & OpenEDG Institute</div>
-            <div class="certification-item">Artificial Intelligence Certification</div>
-            <div class="certification-item">Machine Learning & Algorithm Certification</div>
-            <div class="certification-item">Big Data Analytics Certification</div>
-            <div class="certification-item">Cisco Certified Instructor – Cisco NetAcad</div>
-            <div class="certification-item">ICT & Digital Skills Training in Python</div>
-            <div class="certification-item">Scientific Computing with Python Certification</div>
-            <div class="certification-item">JavaScript Certification</div>
+            <div class="certification-item">PCAP Certificate – Python Institute & OpenEDG Institute
+                <a href="assets/img/portfolio/PCAP-Certificate.jpg" class="view-link">View Certificate</a>
+            </div>
+            <div class="certification-item">Artificial Intelligence Certification
+                <a href="assets/img/portfolio/AI-Cretificate.jpg" class="view-link">View Certificate</a>
+              </div>
+              <div class="certification-item">Machine Learning & Algorithm Certification
+                <a href="assets/img/portfolio/Machine-Learning.jpg" class="view-link">View Certificate</a>
+              </div>
+              <div class="certification-item">Big Data Analytics Certification
+                <a href="assets/img/portfolio/Big-Data-Analytics.jpg" class="view-link">View Certificate</a>
+            </div>
+            <div class="certification-item">Cisco Certified Instructor – Cisco NetAcad
+                <a href="assets/img/portfolio/Certified Instructor.jpg" class="view-link">View Certificate</a>
+            </div>
+            <div class="certification-item">ICT & Digital Skills Training in Python
+                <a href="assets/img/portfolio/Python.jpg" class="view-link">View Certificate</a>
+            </div>
+            <div class="certification-item">Scientific Computing with Python Certification
+                <a href="assets/img/portfolio/Freecodecamp-Python.jpg" class="view-link">View Certificate</a>
+            </div>
+            <div class="certification-item">JavaScript Certification
+                <a href="#" class="view-link">View Certificate</a>
+            </div>
           </div>
         </div>
       </div>
@@ -1161,6 +1201,8 @@
             <span class="tech-tag">TypeScript</span>
             <span class="tech-tag">PHP</span>
             <span class="tech-tag">C#</span>
+            <span class="tech-tag">Kotlin</span>
+            <span class="tech-tag">Html / Css</span>
           </div>
         </div>
         
@@ -1171,6 +1213,8 @@
             <span class="tech-tag">FastAPI</span>
             <span class="tech-tag">React.js</span>
             <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">.Net</span>
+            <span class="tech-tag">Tailwind / Bootstrap</span>
           </div>
         </div>
         
@@ -1187,11 +1231,12 @@
         <div class="tech-category">
           <h3 class="category-title"><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
           <div class="tech-items">
-            <span class="tech-tag">AWS</span>
             <span class="tech-tag">GCP</span>
+            <span class="tech-tag">AWS</span>
             <span class="tech-tag">CI/CD</span>
             <span class="tech-tag">Docker</span>
             <span class="tech-tag">Git</span>
+            <span class="tech-tag">Github</span>
           </div>
         </div>
         
@@ -1203,6 +1248,7 @@
             <span class="tech-tag">Pandas</span>
             <span class="tech-tag">Scikit-learn</span>
             <span class="tech-tag">OpenCV</span>
+            <span class="tech-tag">Regression</span>
           </div>
         </div>
         
@@ -1213,6 +1259,7 @@
             <span class="tech-tag">AES-256</span>
             <span class="tech-tag">JWT</span>
             <span class="tech-tag">SAST/DAST</span>
+            <span class="tech-tag">ClamAV</span>
           </div>
         </div>
       </div>
