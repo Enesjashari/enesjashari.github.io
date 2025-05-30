@@ -184,16 +184,36 @@
 }
 
 .view-link {
+  position: relative;
   font-size: 0.9rem;
   color: var(--primary);
-  text-decoration: underline;
+  text-decoration: none; /* disable default underline */
   margin-left: 1rem;
-  transition: color 0.2s;
+  transition: color 0.3s ease;
+}
+
+/* Glowing background + animated underline */
+.view-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 0;
+  background: var(--primary);
+  transition: width 0.4s ease;
+  box-shadow: 0 0 6px var(--primary);
 }
 
 .view-link:hover {
-  color: var(--accent);
+  color: var(--primary); /* keep consistent or adjust to --accent if preferred */
+  background-color: rgba(0, 217, 255, 0.05); /* subtle blue glow background */
 }
+
+.view-link:hover::after {
+  width: 100%;
+}
+
 
 
 .hero-profile::after {
@@ -1094,7 +1114,7 @@
           <div class="timeline-content">
             <span class="timeline-date">Jan 2023 - Present</span>
             <h3 class="timeline-title">Senior Full Stack Engineer</h3>
-            <span class="timeline-company">Locum Providers (AI Department), Boston, USA</span>
+            <span class="timeline-company">Locum Providers, Boston, USA</span>
             <ul class="timeline-list">
               <li>Architected role-based authentication flows leveraging AES-256 encryption and JWT token validation</li>
               <li>Integrated CI/CD pipelines with automated security scans, boosting deployment frequency by 25%</li>
