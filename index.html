@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-35TZ5QERBX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-35TZ5QERBX');
-</script>
+  <meta charset="utf-8">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-35TZ5QERBX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-35TZ5QERBX');
+  </script>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Enes Jashari - AI Engineer , Data Engineer and Senior Full Stack Developer </title>
-  <meta content="Senior Full Stack Engineer with 6+ years specializing in AI-powered applications and scalable backend systems. Expertise in Python, Django, React, and machine learning." name="description">
-  <meta content="Enes Jashari, Python, Django, React, AI, Machine Learning, Full Stack Developer, Software Engineer, Portfolio" name="keywords">
+  <title>Enes Jashari - AI Engineer & Neural Network Specialist</title>
+  <meta content="AI Engineer specializing in Large Language Models (LLMs), Neural Networks, and scalable AI systems."
+    name="description">
+  <meta content="Enes Jashari, AI Engineer, LLM, Neural Networks, Machine Learning, Python, Deep Learning"
+    name="keywords">
   <meta name="author" content="Enes Jashari">
-  
+
   <!-- Open Graph Meta Tags -->
   <meta property="og:url" content="https://enesjashari.com/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Enes Jashari - Senior Full Stack Engineer & AI Specialist">
-  <meta property="og:description" content="Senior Full Stack Engineer with 6+ years specializing in AI-powered applications and scalable backend systems.">
+  <meta property="og:title" content="Enes Jashari - AI Engineer & LLM Specialist">
+  <meta property="og:description"
+    content="Senior Full Stack Engineer with 6+ years specializing in AI-powered applications and scalable backend systems.">
   <meta property="og:image" content="https://enesjashari.com/assets/img/enes_landscape.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -29,8 +33,9 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta property="twitter:domain" content="enesjashari.com">
   <meta property="twitter:url" content="https://enesjashari.com/">
-  <meta name="twitter:title" content="Enes Jashari - Senior Full Stack Engineer & AI Specialist">
-  <meta name="twitter:description" content="Senior Full Stack Engineer with 6+ years specializing in AI-powered applications and scalable backend systems.">
+  <meta name="twitter:title" content="Enes Jashari - AI Engineer & LLM Specialist">
+  <meta name="twitter:description"
+    content="Senior Full Stack Engineer with 6+ years specializing in AI-powered applications and scalable backend systems.">
   <meta name="twitter:image" content="https://enesjashari.com/assets/img/enes_landscape.jpg">
 
   <!-- Favicons -->
@@ -43,23 +48,25 @@
 
   <style>
     :root {
-      --bg-primary: #ffffff;
-      --bg-secondary: #f5f5f7;
-      --bg-tertiary: #f2f2f2;
-      --text-primary: #1d1d1f;
-      --text-secondary: #86868b;
-      --text-tertiary: #515154;
-      --accent-blue: #0071e3;
-      --accent-blue-light: #2997ff;
+      --bg-primary: #050507;
+      --bg-secondary: #0f1115;
+      --bg-tertiary: #181b21;
+      --text-primary: #f5f5f7;
+      --text-secondary: #a1a1a6;
+      --text-tertiary: #86868b;
+      --accent-blue: #2997ff;
+      --accent-blue-light: #4dabff;
       --accent-green: #30d158;
       --accent-purple: #bf5af2;
+      --accent-cyan: #64d2ff;
       --accent-orange: #ff9f0a;
-      --border-light: #d2d2d7;
-      --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-      --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.12);
+      --border-light: #2c2c2e;
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.6);
       --radius: 12px;
       --radius-lg: 18px;
       --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      --gradient-main: linear-gradient(135deg, #2997ff 0%, #bf5af2 100%);
     }
 
     * {
@@ -78,7 +85,12 @@
     }
 
     /* Typography */
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       font-weight: 600;
       line-height: 1.2;
       margin-bottom: 1rem;
@@ -145,7 +157,7 @@
       left: 0;
       width: 100%;
       z-index: 1000;
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color: rgba(5, 5, 7, 0.8);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       transition: var(--transition);
@@ -221,7 +233,11 @@
     /* Hero Section */
     .hero {
       padding: 160px 0 100px;
-      background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+      /* Neural Network / AI Theme Background */
+      background:
+        radial-gradient(circle at 15% 50%, rgba(41, 151, 255, 0.08) 0%, transparent 25%),
+        radial-gradient(circle at 85% 30%, rgba(191, 90, 242, 0.08) 0%, transparent 25%),
+        linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
       position: relative;
       overflow: hidden;
     }
@@ -229,12 +245,16 @@
     .hero::before {
       content: '';
       position: absolute;
-      top: -50%;
-      right: -20%;
-      width: 800px;
-      height: 800px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(0, 113, 227, 0.05) 0%, rgba(0, 113, 227, 0) 70%);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image:
+        radial-gradient(var(--border-light) 1px, transparent 1px),
+        radial-gradient(var(--border-light) 1px, transparent 1px);
+      background-size: 50px 50px;
+      background-position: 0 0, 25px 25px;
+      opacity: 0.05;
       z-index: 0;
     }
 
@@ -299,8 +319,9 @@
     }
 
     .btn-primary {
-      background-color: var(--accent-blue);
+      background: var(--accent-blue);
       color: white;
+      /* Keep white for contrast on blue */
     }
 
     .btn-primary:hover {
@@ -732,16 +753,17 @@
 
     /* Responsive Design */
     @media (max-width: 992px) {
+
       .hero-content,
       .about-content {
         grid-template-columns: 1fr;
         gap: 3rem;
       }
-      
+
       .hero-image {
         order: -1;
       }
-      
+
       .skills-grid {
         grid-template-columns: 1fr;
       }
@@ -751,7 +773,7 @@
       section {
         padding: 80px 0;
       }
-      
+
       .nav-menu {
         position: fixed;
         top: 70px;
@@ -767,20 +789,20 @@
         transition: var(--transition);
         z-index: 999;
       }
-      
+
       .nav-menu.active {
         transform: translateY(0);
         opacity: 1;
       }
-      
+
       .mobile-toggle {
         display: block;
       }
-      
+
       .hero-actions {
         justify-content: center;
       }
-      
+
       .tech-categories,
       .projects-grid {
         grid-template-columns: 1fr;
@@ -793,6 +815,7 @@
         opacity: 0;
         transform: translateY(30px);
       }
+
       to {
         opacity: 1;
         transform: translateY(0);
@@ -867,8 +890,23 @@
       width: 0%;
       transition: width 0.3s ease;
     }
+
+    /* Footer Updates */
+    .footer-cta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .footer-cta h3 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
   </style>
 </head>
+
 <body>
   <!-- Loading Screen -->
   <div class="loader">
@@ -908,18 +946,14 @@
       <div class="hero-content">
         <div class="hero-text fade-in-up">
           <h1>Enes Jashari</h1>
-          <p class="hero-description">Senior Full Stack Engineer & AI Specialist</p>
-          <p>I build intelligent, scalable solutions that solve complex problems and create exceptional user experiences.</p>
+          <p class="hero-description"><span style="color: var(--accent-blue);">AI Engineer</span> & <span
+              style="color: var(--accent-purple);">Agentic AI Architect</span></p>
+          <p>Building the future with Large Language Models and Deep Learning. I design intelligent systems that think,
+            learn, and evolve.</p>
           <div class="hero-actions">
             <div class="row">
-              <a href="#projects" class="btn btn-primary">
-                <i class="fas fa-rocket"></i> View Projects
-              </a>
               <a href="#contact" class="btn btn-secondary">
                 <i class="fas fa-paper-plane"></i> Get in Touch
-              </a>
-              <a href="https://www.enesjashari.com/assets/CV/Enes%20Jashari%20Resume.pdf"  target="_blank" class="btn btn-primary">
-                <i class="fas fa-file-pdf"></i> View Resume
               </a>
             </div>
           </div>
@@ -936,13 +970,15 @@
     <div class="container">
       <div class="section-header text-center fade-in-up">
         <h2>About Me</h2>
-        <p class="section-subtitle">Passionate about creating scalable solutions and pushing the boundaries of technology</p>
+        <p class="section-subtitle">Passionate about creating scalable solutions and pushing the boundaries of
+          technology</p>
       </div>
       <div class="about-content">
         <div class="about-text fade-in-up">
-    <p>AI & Data Specialist and Product Leader with 6+ years of experience building AI-powered applications and scalable backend systems. I worked at Locum Providers a healthcare company for around 3 years, where I recently led AI initiatives, architected secure authentication systems, and built data-intensive platforms serving thousands of users.</p>
-<p>My expertise spans full-stack development with particular strength in Python, FastAPI, Django, and React ecosystems. I’ve designed AI-powered resume-matching software using NLP and machine learning that reduced operational inefficiencies by 20% and improved candidate-to-role fit by 30%.</p>
-<p>As an Instructor at RIT Kosovo T.D.I I’ve mentored 300+ students across 15 comprehensive curricula, and as a Software Development Leader I’ve led cross-functional teams to deliver secure, production-ready products on time. I’m passionate about applying cutting-edge AI and intelligent systems to solve real-world problems.</p>
+          <p>AI Engineer with strong ownership of backend architecture, AI agent orchestration, and workflow execution
+            platforms in enterprise environments. Proven experience designing scalable, asynchronous systems that
+            integrate AI agents, metrics engines, and real time execution pipelines. Focused on reliability,
+            observability, and measurable business impact across regulated and data intensive domains.</p>
         </div>
         <div class="skills-grid fade-in-up delay-1">
           <div class="skill-item">
@@ -1001,10 +1037,12 @@
           <div class="timeline-content">
             <span class="timeline-date">January 2025 - August 2025</span>
             <h3>AI Engineer</h3>
-            <span class="timeline-company">Locum Providers - Healthcare, Boston, Massachusetts</span>
+            <span class="timeline-company"> Boston, Massachusetts</span>
             <ul class="timeline-list">
-              <li>Spearheaded the design and deployment of NLP-based LLM APIs to autonomously extract structured data from user Resumes</li>
-              <li>Led end-to-end development of 35+ AI-powered Agents for profile scoring, recommendation, and enrichment</li>
+              <li>Spearheaded the design and deployment of NLP-based LLM APIs to autonomously extract structured data
+                from user Resumes</li>
+              <li>Led end-to-end development of 35+ AI-powered Agents for profile scoring, recommendation, and
+                enrichment</li>
               <li>Implemented smart agent systems using LLMs to assist HR teams through conversational interfaces</li>
               <li>Developed intelligent multi-agent workflows using LangChain, LangGraph, and AirFlow</li>
             </ul>
@@ -1017,9 +1055,10 @@
           <div class="timeline-content">
             <span class="timeline-date">January 2023 - January 2025</span>
             <h3>Senior Full Stack Engineer</h3>
-            <span class="timeline-company">Locum Providers - Healthcare, Boston, Massachusetts</span>
+            <span class="timeline-company"> Boston, Massachusetts</span>
             <ul class="timeline-list">
-              <li>Utilized Python, Celery and Redis to build scalable backend services achieving sub-second API response times</li>
+              <li>Utilized Python, Celery and Redis to build scalable backend services achieving sub-second API response
+                times</li>
               <li>Led end-to-end development of AI-powered systems for profile scoring and recommendation</li>
               <li>Implemented smart agent systems for automated report generation and data analytics</li>
               <li>Developed multi-agent workflows enabling real-time creation of user experience narratives</li>
@@ -1033,7 +1072,7 @@
           <div class="timeline-content">
             <span class="timeline-date">February 2023 - March 2025</span>
             <h3>Programming Instructor</h3>
-            <span class="timeline-company">A.U.K (TDI Department), Prishtina, Kosovo</span>
+            <span class="timeline-company">RIT Kosovo T.D.I, Prishtina, Kosovo</span>
             <ul class="timeline-list">
               <li>Designed 12+ comprehensive curricula (Python, Java, Django, PHP, Kotlin, React, Android)</li>
               <li>Mentored over 350+ students through hands-on projects, achieving high course completion rates</li>
@@ -1048,7 +1087,7 @@
           <div class="timeline-content">
             <span class="timeline-date">February 2022 - February 2023</span>
             <h3>Head of Development Department</h3>
-            <span class="timeline-company">Green Technologies, Germany</span>
+            <span class="timeline-company">Germany</span>
             <ul class="timeline-list">
               <li>Led a cross-functional team of six engineers, designers, and product managers</li>
               <li>Established coding standards, security protocols, and CI/CD pipelines</li>
@@ -1070,7 +1109,7 @@
       <div class="education-grid">
         <div class="education-card fade-in-up">
           <h3 class="education-title">Bachelor of Computer Science - Software Engineering</h3>
-          <span class="education-institution">University of Prishtina</span>
+          <span class="education-institution"></span>
           <div class="certifications">
             <h4>Certifications:</h4>
             <div class="certification-item">
@@ -1206,126 +1245,14 @@
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section class="projects" id="projects">
-    <div class="container">
-      <div class="section-header text-center fade-in-up">
-        <h2>Featured Projects</h2>
-        <p class="section-subtitle">A showcase of innovative solutions that demonstrate technical excellence</p>
-      </div>
-      <div class="projects-grid">
-        <!-- Solus: AI Personal Assistant (FIRST) -->
-        <div class="project-card fade-in-up">
-          <div class="project-image">
-            <i class="fas fa-robot" style="font-size: 3rem;"></i>
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Solus AI Personal Assistant</h3>
-            <p class="project-description">Solus is a full-stack AI personal assistant powered by conversational LLMs and LangChain. It offers contextual multi-turn dialogue, semantic search, task automation, and prompt orchestration designed for real-world productivity and extensibility.</p>
-            <div class="project-tech">
-              <span class="tech-tag">LLMs</span>
-              <span class="tech-tag">LangChain</span>
-              <span class="tech-tag">Vector Search</span>
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">React</span>
-            </div>
-            <div class="project-links">
-              <a href="https://enes-personal-assistant.netlify.app/" class="project-link" target="_blank" rel="noopener"><i class="fas fa-rocket"></i> Live Demo</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card fade-in-up delay-1">
-          <div class="project-image">
-            <i class="fas fa-robot" style="font-size: 3rem;"></i>
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">AI-Powered Resume Matching System</h3>
-            <p class="project-description">Revolutionary AI system using unsupervised learning and NLP techniques to match candidates with roles. Processes 50+ profiles in under 10 seconds, achieving 30% improvement in candidate-to-role fit accuracy.</p>
-            <div class="project-tech">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Django</span>
-              <span class="tech-tag">TensorFlow</span>
-              <span class="tech-tag">NLP</span>
-            </div>
-            <div class="project-links">
-              <!-- <a href="#" class="project-link"><i class="fas fa-book"></i> Case Study</a> -->
-              <!-- <a href="#" class="project-link"><i class="fas fa-file-code"></i> Details</a> -->
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card fade-in-up delay-2">
-          <div class="project-image">
-            <i class="fas fa-university" style="font-size: 3rem;"></i>
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">E-Banking API Security Suite</h3>
-            <p class="project-description">Architected secure banking API with AES-256 encryption and JWT validation, reducing auth-related incidents by 40%. Serves 50+ daily active users with enterprise-grade security features.</p>
-            <div class="project-tech">
-              <span class="tech-tag">Django</span>
-              <span class="tech-tag">AES-256</span>
-              <span class="tech-tag">JWT</span>
-              <span class="tech-tag">REST API</span>
-            </div>
-            <div class="project-links">
-              <a href="https://bankapi.pythonanywhere.com/" class="project-link" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> API Docs</a>
-              <a href="https://bankapi.pythonanywhere.com/" class="project-link" target="_blank" rel="noopener"><i class="fas fa-shield-alt"></i> Security</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card fade-in-up delay-3">
-          <div class="project-image">
-            <i class="fas fa-cloud-sun" style="font-size: 3rem;"></i>
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Weather Forecast Engine</h3>
-            <p class="project-description">Advanced machine learning system for Weather predictions using TensorFlow and time-series analysis. Features real-time data processing and predictive analytics with high accuracy rates.</p>
-            <div class="project-tech">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">TensorFlow</span>
-              <span class="tech-tag">Pandas</span>
-              <span class="tech-tag">NumPy</span>
-            </div>
-            <div class="project-links">
-              <a href="https://aiprediction.pythonanywhere.com/" class="project-link" target="_blank" rel="noopener"><i class="fas fa-chart-line"></i> Live Demo</a>
-              <a href="https://aiprediction.pythonanywhere.com/" class="project-link" target="_blank" rel="noopener"><i class="fas fa-cogs"></i> Algorithm</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card fade-in-up delay-4">
-          <div class="project-image">
-            <i class="fas fa-quote-right" style="font-size: 3rem;"></i>
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Quote API & Nes Magazine Platform</h3>
-            <p class="project-description">Full-stack web applications including a RESTful Quote API and digital magazine platform. Built with Django and deployed on cloud infrastructure with CI/CD pipelines.</p>
-            <div class="project-tech">
-              <span class="tech-tag">Django</span>
-              <span class="tech-tag">REST API</span>
-              <span class="tech-tag">HTML/CSS</span>
-              <span class="tech-tag">JavaScript</span>
-            </div>
-            <div class="project-links">
-              <a href="https://quoteapi.pythonanywhere.com" class="project-link" target="_blank" rel="noopener"><i class="fas fa-quote-right"></i> Quote API</a>
-              <a href="https://nesmagazine.pythonanywhere.com" class="project-link" target="_blank" rel="noopener"><i class="fas fa-book-open"></i> Magazine</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
   <!-- Contact Section -->
   <section class="contact" id="contact">
     <div class="container">
       <div class="contact-content fade-in-up">
         <div class="section-header text-center">
           <h2>Let's Create Something Amazing</h2>
-          <p class="section-subtitle">Ready to bring your vision to life? Let's discuss how we can work together to build exceptional digital experiences.</p>
+          <p class="section-subtitle">Ready to bring your vision to life? Let's discuss how we can work together to
+            build exceptional digital experiences.</p>
         </div>
         <div class="contact-info">
           <div class="contact-item">
@@ -1352,13 +1279,21 @@
   <footer>
     <div class="container">
       <div class="footer-content">
-        <p class="footer-text">&copy; 2025 Enes Jashari. Crafted with precision and attention to detail.</p>
-        <div class="footer-social">
-          <a href="mailto:enesjashari2004@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
-          <a href="https://linkedin.com/in/enesjashari" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://enesjashari.com" class="social-link"><i class="fas fa-globe"></i></a>
-          <a href="https://quoteapi.pythonanywhere.com" class="social-link"><i class="fas fa-rocket"></i></a>
+        <div class="footer-cta">
+          <h3>Let's Connect</h3>
+          <a href="https://linkedin.com/in/enesjashari" target="_blank" class="btn btn-primary">
+            <i class="fab fa-linkedin-in"></i> Connect on LinkedIn
+          </a>
         </div>
+        <div class="footer-social">
+          <a href="mailto:enesjashari2004@gmail.com" class="social-link" title="Email"><i
+              class="fas fa-envelope"></i></a>
+          <a href="https://linkedin.com/in/enesjashari" class="social-link" target="_blank" title="LinkedIn"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/enesjashari" class="social-link" target="_blank" title="GitHub"><i
+              class="fab fa-github"></i></a>
+        </div>
+        <p class="footer-text">&copy; 2026 Enes Jashari.</p>
       </div>
     </div>
   </footer>
@@ -1369,7 +1304,7 @@
     window.addEventListener('load', () => {
       const loader = document.querySelector('.loader');
       const progressBar = document.querySelector('.loader-progress');
-      
+
       // Simulate loading progress
       let progress = 0;
       const interval = setInterval(() => {
@@ -1377,7 +1312,7 @@
         if (progress >= 100) {
           progress = 100;
           clearInterval(interval);
-          
+
           // Hide loader after a short delay
           setTimeout(() => {
             loader.style.opacity = '0';
@@ -1393,11 +1328,11 @@
     // Mobile navigation toggle
     const mobileToggle = document.querySelector('.mobile-toggle');
     const navMenu = document.querySelector('.nav-menu');
-    
+
     mobileToggle.addEventListener('click', () => {
       navMenu.classList.toggle('active');
-      mobileToggle.innerHTML = navMenu.classList.contains('active') 
-        ? '<i class="fas fa-times"></i>' 
+      mobileToggle.innerHTML = navMenu.classList.contains('active')
+        ? '<i class="fas fa-times"></i>'
         : '<i class="fas fa-bars"></i>';
     });
 
@@ -1431,12 +1366,12 @@
 
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
+      anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        
+
         const targetId = this.getAttribute('href');
         if (targetId === '#') return;
-        
+
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
           window.scrollTo({
@@ -1474,33 +1409,34 @@
     document.querySelectorAll('.delay-1').forEach(el => {
       el.style.transitionDelay = '0.2s';
     });
-    
+
     document.querySelectorAll('.delay-2').forEach(el => {
       el.style.transitionDelay = '0.4s';
     });
-    
+
     document.querySelectorAll('.delay-3').forEach(el => {
       el.style.transitionDelay = '0.6s';
     });
 
     // Google Analytics
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-35TZ5QERBX');
   </script>
 
   <!-- Tawk.to Script -->
   <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/639f1d88daff0e1306dd399e/1gkiomnsg';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/639f1d88daff0e1306dd399e/1gkiomnsg';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
     })();
   </script>
 </body>
+
 </html>
